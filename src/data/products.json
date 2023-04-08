@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Plain Ol' Apples",
+    "image": "apple-image.png",
+    "price": 4
+  },
+  {
+    "name": "Trail Mix",
+    "image": "trail-mix.png",
+    "price": 5
+  },
+  {
+    "name": "Orbit Gum",
+    "image": "orbit-gum.png",
+    "price": 3
+  },
+  {
+    "name": "I'm Thinking T-shirt",
+    "image": "Im-thinking-shirt.png",
+    "price": 12
+  }
+]

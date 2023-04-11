@@ -25,7 +25,7 @@ const active = ref(false);
             :key="name"
             :product="items[0]"
             :count="cartStore.groupCount(name)"
-            @updateCount=""
+            @updateCount="cartStore.setItemCount(items[0], $event)"
             @clear="cartStore.clearItem(name)"
           />
         </ul>
@@ -36,7 +36,9 @@ const active = ref(false);
           <AppButton class="secondary mr-2" @click="cartStore.$reset()"
             >Clear Cart</AppButton
           >
-          <AppButton class="primary">Checkout</AppButton>
+          <AppButton class="primary" @click="cartStore.checkout"
+            >Checkout</AppButton
+          >
         </div>
       </div>
       <!-- Uncomment and use condition to show when cart is empty -->
